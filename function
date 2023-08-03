@@ -1,0 +1,19 @@
+function spawnSeed(){
+	
+	seed=new Object();
+	seed.x=-50+Math.random()*100;
+	seed.y=25;
+	seed.z=-50+Math.random()*100;
+	seed.vx=.1-Math.random()*.2;
+	seed.vy=-1.5;//*(1+Math.random()/2);
+	seed.vz=.1-Math.random()*.2;
+	seed.born=frames;
+	seeds.push(seed);
+}
+ 
+function splode(x,y,z){
+	
+	t=5+parseInt(Math.random()*150);
+	sparkV=1+Math.random()*2.5;
+	type=parseInt(Math.random()*3);
+	switch(type){
